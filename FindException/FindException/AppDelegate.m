@@ -1,10 +1,4 @@
-//
-//  AppDelegate.m
-//  FindException
-//
-//  Created by wadexiong on 14/10/24.
-//  Copyright (c) 2014年 xiong. All rights reserved.
-//
+
 
 #import "AppDelegate.h"
 #import "ViewController.h"
@@ -13,12 +7,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    //XZH - 开始XcodeColors色彩输出控制台
+#ifdef DEBUG
+    setenv("XcodeColors", "YES", 0);
+#else
+    setenv("XcodeColors", "YES", 1);
+#endif
+    
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
     ViewController *vc = [[ViewController alloc] init];
     vc.view.backgroundColor = [UIColor whiteColor];
     [self.window setRootViewController:vc];
+    
     return YES;
 }
 							

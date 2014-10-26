@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		212F14FB19FCF5D3000EC720 /* MyLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 212F14FA19FCF5D3000EC720 /* MyLogger.m */; };
+		217871CA19FCF1C1006CF9F0 /* CLIColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 217871B219FCF1C1006CF9F0 /* CLIColor.m */; };
+		217871CB19FCF1C1006CF9F0 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 217871B519FCF1C1006CF9F0 /* DDAbstractDatabaseLogger.m */; };
+		217871CC19FCF1C1006CF9F0 /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 217871B719FCF1C1006CF9F0 /* DDASLLogCapture.m */; };
+		217871CD19FCF1C1006CF9F0 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 217871B919FCF1C1006CF9F0 /* DDASLLogger.m */; };
+		217871CE19FCF1C1006CF9F0 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 217871BC19FCF1C1006CF9F0 /* DDFileLogger.m */; };
+		217871CF19FCF1C1006CF9F0 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 217871BF19FCF1C1006CF9F0 /* DDLog.m */; };
+		217871D019FCF1C1006CF9F0 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 217871C219FCF1C1006CF9F0 /* DDTTYLogger.m */; };
+		217871D119FCF1C1006CF9F0 /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 217871C519FCF1C1006CF9F0 /* DDContextFilterLogFormatter.m */; };
+		217871D219FCF1C1006CF9F0 /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 217871C719FCF1C1006CF9F0 /* DDDispatchQueueLogFormatter.m */; };
+		217871D319FCF1C1006CF9F0 /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 217871C919FCF1C1006CF9F0 /* DDMultiFormatter.m */; };
 		94BEB6A119F9FF91001D98E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94BEB6A019F9FF91001D98E1 /* Foundation.framework */; };
 		94BEB6A319F9FF91001D98E1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94BEB6A219F9FF91001D98E1 /* CoreGraphics.framework */; };
 		94BEB6A519F9FF91001D98E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94BEB6A419F9FF91001D98E1 /* UIKit.framework */; };
@@ -35,6 +46,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		212F14F919FCF5D3000EC720 /* MyLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLogger.h; sourceTree = "<group>"; };
+		212F14FA19FCF5D3000EC720 /* MyLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLogger.m; sourceTree = "<group>"; };
+		217871B119FCF1C1006CF9F0 /* CLIColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLIColor.h; sourceTree = "<group>"; };
+		217871B219FCF1C1006CF9F0 /* CLIColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLIColor.m; sourceTree = "<group>"; };
+		217871B319FCF1C1006CF9F0 /* CocoaLumberjack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaLumberjack.h; sourceTree = "<group>"; };
+		217871B419FCF1C1006CF9F0 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		217871B519FCF1C1006CF9F0 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		217871B619FCF1C1006CF9F0 /* DDASLLogCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogCapture.h; sourceTree = "<group>"; };
+		217871B719FCF1C1006CF9F0 /* DDASLLogCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogCapture.m; sourceTree = "<group>"; };
+		217871B819FCF1C1006CF9F0 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		217871B919FCF1C1006CF9F0 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		217871BA19FCF1C1006CF9F0 /* DDAssertMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAssertMacros.h; sourceTree = "<group>"; };
+		217871BB19FCF1C1006CF9F0 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		217871BC19FCF1C1006CF9F0 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		217871BD19FCF1C1006CF9F0 /* DDLog+LOGV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDLog+LOGV.h"; sourceTree = "<group>"; };
+		217871BE19FCF1C1006CF9F0 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		217871BF19FCF1C1006CF9F0 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		217871C019FCF1C1006CF9F0 /* DDLogMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLogMacros.h; sourceTree = "<group>"; };
+		217871C119FCF1C1006CF9F0 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		217871C219FCF1C1006CF9F0 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		217871C419FCF1C1006CF9F0 /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		217871C519FCF1C1006CF9F0 /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		217871C619FCF1C1006CF9F0 /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		217871C719FCF1C1006CF9F0 /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		217871C819FCF1C1006CF9F0 /* DDMultiFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMultiFormatter.h; sourceTree = "<group>"; };
+		217871C919FCF1C1006CF9F0 /* DDMultiFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMultiFormatter.m; sourceTree = "<group>"; };
 		94BEB69D19F9FF91001D98E1 /* FindException.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindException.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94BEB6A019F9FF91001D98E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		94BEB6A219F9FF91001D98E1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -83,6 +120,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		217871AF19FCF1C1006CF9F0 /* LogLib */ = {
+			isa = PBXGroup;
+			children = (
+				217871B019FCF1C1006CF9F0 /* CLI */,
+				217871B319FCF1C1006CF9F0 /* CocoaLumberjack.h */,
+				217871B419FCF1C1006CF9F0 /* DDAbstractDatabaseLogger.h */,
+				217871B519FCF1C1006CF9F0 /* DDAbstractDatabaseLogger.m */,
+				217871B619FCF1C1006CF9F0 /* DDASLLogCapture.h */,
+				217871B719FCF1C1006CF9F0 /* DDASLLogCapture.m */,
+				217871B819FCF1C1006CF9F0 /* DDASLLogger.h */,
+				217871B919FCF1C1006CF9F0 /* DDASLLogger.m */,
+				217871BA19FCF1C1006CF9F0 /* DDAssertMacros.h */,
+				217871BB19FCF1C1006CF9F0 /* DDFileLogger.h */,
+				217871BC19FCF1C1006CF9F0 /* DDFileLogger.m */,
+				217871BD19FCF1C1006CF9F0 /* DDLog+LOGV.h */,
+				217871BE19FCF1C1006CF9F0 /* DDLog.h */,
+				217871BF19FCF1C1006CF9F0 /* DDLog.m */,
+				217871C019FCF1C1006CF9F0 /* DDLogMacros.h */,
+				217871C119FCF1C1006CF9F0 /* DDTTYLogger.h */,
+				217871C219FCF1C1006CF9F0 /* DDTTYLogger.m */,
+				217871C319FCF1C1006CF9F0 /* Extensions */,
+			);
+			path = LogLib;
+			sourceTree = "<group>";
+		};
+		217871B019FCF1C1006CF9F0 /* CLI */ = {
+			isa = PBXGroup;
+			children = (
+				217871B119FCF1C1006CF9F0 /* CLIColor.h */,
+				217871B219FCF1C1006CF9F0 /* CLIColor.m */,
+			);
+			path = CLI;
+			sourceTree = "<group>";
+		};
+		217871C319FCF1C1006CF9F0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				217871C419FCF1C1006CF9F0 /* DDContextFilterLogFormatter.h */,
+				217871C519FCF1C1006CF9F0 /* DDContextFilterLogFormatter.m */,
+				217871C619FCF1C1006CF9F0 /* DDDispatchQueueLogFormatter.h */,
+				217871C719FCF1C1006CF9F0 /* DDDispatchQueueLogFormatter.m */,
+				217871C819FCF1C1006CF9F0 /* DDMultiFormatter.h */,
+				217871C919FCF1C1006CF9F0 /* DDMultiFormatter.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		94BEB69419F9FF91001D98E1 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +200,7 @@
 		94BEB6A619F9FF91001D98E1 /* FindException */ = {
 			isa = PBXGroup;
 			children = (
+				217871AF19FCF1C1006CF9F0 /* LogLib */,
 				94BEB6AF19F9FF91001D98E1 /* AppDelegate.h */,
 				94BEB6B019F9FF91001D98E1 /* AppDelegate.m */,
 				94BEB6B219F9FF91001D98E1 /* Main.storyboard */,
@@ -126,6 +211,8 @@
 				94BEB6D519F9FFB4001D98E1 /* Manager.h */,
 				94BEB6D619F9FFB4001D98E1 /* Manager.m */,
 				94BEB6D919FA0133001D98E1 /* Config.h */,
+				212F14F919FCF5D3000EC720 /* MyLogger.h */,
+				212F14FA19FCF5D3000EC720 /* MyLogger.m */,
 			);
 			path = FindException;
 			sourceTree = "<group>";
@@ -218,6 +305,7 @@
 			knownRegions = (
 				en,
 				Base,
+				English,
 			);
 			mainGroup = 94BEB69419F9FF91001D98E1;
 			productRefGroup = 94BEB69E19F9FF91001D98E1 /* Products */;
@@ -256,9 +344,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				217871CF19FCF1C1006CF9F0 /* DDLog.m in Sources */,
+				217871D219FCF1C1006CF9F0 /* DDDispatchQueueLogFormatter.m in Sources */,
+				217871CD19FCF1C1006CF9F0 /* DDASLLogger.m in Sources */,
 				94BEB6B719F9FF91001D98E1 /* ViewController.m in Sources */,
+				212F14FB19FCF5D3000EC720 /* MyLogger.m in Sources */,
 				94BEB6B119F9FF91001D98E1 /* AppDelegate.m in Sources */,
+				217871D019FCF1C1006CF9F0 /* DDTTYLogger.m in Sources */,
+				217871CC19FCF1C1006CF9F0 /* DDASLLogCapture.m in Sources */,
+				217871CB19FCF1C1006CF9F0 /* DDAbstractDatabaseLogger.m in Sources */,
 				94BEB6AD19F9FF91001D98E1 /* main.m in Sources */,
+				217871CA19FCF1C1006CF9F0 /* CLIColor.m in Sources */,
+				217871D319FCF1C1006CF9F0 /* DDMultiFormatter.m in Sources */,
+				217871D119FCF1C1006CF9F0 /* DDContextFilterLogFormatter.m in Sources */,
+				217871CE19FCF1C1006CF9F0 /* DDFileLogger.m in Sources */,
 				94BEB6D719F9FFB4001D98E1 /* Manager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
