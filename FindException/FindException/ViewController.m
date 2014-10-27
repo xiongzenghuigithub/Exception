@@ -29,7 +29,7 @@
     
     int x = 4;
     NSString *xxx = @"dawdawdaw";
-    [m test];
+//    [m test];
 //    if ([m respondsToSelector:@selector(test)]) {
 //        [m test];
 //    }else {
@@ -40,6 +40,19 @@
     view = [[UIView alloc] init];
     view.frame = CGRectMake(10, 10, 200, 100);
     [self.view addSubview:view];
+    
+    UIView * view2 = [[UIView alloc] init];
+    [view addSubview:view2];
+    
+    UIView * view3 = [[UIView alloc] init];
+    view3.frame = CGRectMake(50, 50, 50, 50);
+    [view addSubview:view3];
+    
+    UIView * view4 = [[UIView alloc] init];
+    [self.view addSubview:view4];
+    
+    UIView * view5 = [[UIView alloc] init];
+    [view2 addSubview:view5];
     
     NSArray *arr = @[@"dawdawd", @"dawdawd"];
     NSDictionary *dict = @{@"kei1": @"value1", @"key2":@"value2"};
