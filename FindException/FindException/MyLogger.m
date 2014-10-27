@@ -15,25 +15,26 @@ static const int ddLogLevel = LOG_LEVEL_OFF; //发布版本时, 直接关闭所�
 + (void)initialize {
     [DDLog addLogger:[DDTTYLogger sharedInstance]];
     [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
+    
+    [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor redColor] backgroundColor:nil forFlag:LOG_FLAG_ERROR];
+    [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor blueColor] backgroundColor:nil forFlag:LOG_FLAG_INFO];
+    [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor brownColor] backgroundColor:nil forFlag:LOG_FLAG_WARN];
+    [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor purpleColor] backgroundColor:nil forFlag:LOG_FLAG_VERBOSE];
 }
 
 + (void)TTYLogError:(NSString *)info {
-    [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor redColor] backgroundColor:nil forFlag:LOG_FLAG_ERROR];
     DDLogError(info);
 }
 
 + (void)TTYLogInfo:(NSString *)info {
-    [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor blueColor] backgroundColor:nil forFlag:LOG_FLAG_INFO];
     DDLogInfo(info);
 }
 
 + (void)TTYLogWarn:(NSString *)info {
-    [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor brownColor] backgroundColor:nil forFlag:LOG_FLAG_WARN];
     DDLogWarn(info);
 }
 
 + (void)TTYLogVerbose:(NSString *)info {
-    [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor purpleColor] backgroundColor:nil forFlag:LOG_FLAG_VERBOSE];
     DDLogVerbose(info);
 }
 
