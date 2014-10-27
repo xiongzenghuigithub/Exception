@@ -172,7 +172,8 @@ typedef NS_OPTIONS(NSUInteger, DDLogFlag) {
     DDLogFlagWarning    = (1 << 1),  // 0...00010
     DDLogFlagInfo       = (1 << 2),  // 0...00100
     DDLogFlagDebug      = (1 << 3),  // 0...01000
-    DDLogFlagVerbose    = (1 << 4)   // 0...10000
+    DDLogFlagVerbose    = (1 << 4),   // 0...10000
+    DDLogFlagCustom    = (1 << 5)
 };
 
 typedef NS_ENUM(NSUInteger, DDLogLevel) {
@@ -182,7 +183,9 @@ typedef NS_ENUM(NSUInteger, DDLogLevel) {
     DDLogLevelInfo      = (DDLogLevelWarning | DDLogFlagInfo),          // 0...00111
     DDLogLevelDebug     = (DDLogLevelInfo | DDLogFlagDebug),            // 0...01111
     DDLogLevelVerbose   = (DDLogLevelDebug | DDLogFlagVerbose),         // 0...11111
-    DDLogLevelAll       = NSUIntegerMax                                 // 1111....11111 (DDLogLevelVerbose plus any other flags)
+    DDLogLevelCustom    = (DDLogLevelVerbose | DDLogFlagCustom),
+    DDLogLevelAll       = NSUIntegerMax                                // 1111....11111
+    //(DDLogLevelVerbose plus any other flags)
 };
 
 // Most preprocessor variables aren't available under Swift.
@@ -192,6 +195,7 @@ typedef NS_ENUM(NSUInteger, DDLogLevel) {
 #define LOG_FLAG_INFO     DDLogFlagInfo
 #define LOG_FLAG_DEBUG    DDLogFlagDebug
 #define LOG_FLAG_VERBOSE  DDLogFlagVerbose
+#define LOG_FLAG_CUSTOM   DDLogFlagCustom
 
 #define LOG_LEVEL_OFF     DDLogLevelOff
 #define LOG_LEVEL_ERROR   DDLogLevelError
@@ -199,6 +203,7 @@ typedef NS_ENUM(NSUInteger, DDLogLevel) {
 #define LOG_LEVEL_INFO    DDLogLevelInfo
 #define LOG_LEVEL_DEBUG   DDLogLevelDebug
 #define LOG_LEVEL_VERBOSE DDLogLevelVerbose
+#define LOG_LEVEL_CUSTOM  DDLogLevelCustom
 #define LOG_LEVEL_ALL     DDLogLevelAll
 
 #define LOG_ERROR         (LOG_LEVEL_DEF & DDLogFlagError)
@@ -206,6 +211,7 @@ typedef NS_ENUM(NSUInteger, DDLogLevel) {
 #define LOG_INFO          (LOG_LEVEL_DEF & DDLogFlagInfo)
 #define LOG_DEBUG         (LOG_LEVEL_DEF & DDLogFlagDebug)
 #define LOG_VERBOSE       (LOG_LEVEL_DEF & DDLogFlagVerbose)
+#define LOG_CUSTOM        (LOG_LEVEL_DEF & DDLogFlagCustom)
 
 #define LOG_ASYNC_ENABLED YES
 
@@ -214,6 +220,7 @@ typedef NS_ENUM(NSUInteger, DDLogLevel) {
 #define LOG_ASYNC_INFO    (YES && LOG_ASYNC_ENABLED)
 #define LOG_ASYNC_DEBUG   (YES && LOG_ASYNC_ENABLED)
 #define LOG_ASYNC_VERBOSE (YES && LOG_ASYNC_ENABLED)
+#define LOG_ASYNC_CUSTOM  (YES && LOG_ASYNC_ENABLED)
 
 /**
  * The THIS_FILE macro gives you an NSString of the file name.

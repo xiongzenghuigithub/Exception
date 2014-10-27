@@ -44,10 +44,12 @@
     NSArray *arr = @[@"dawdawd", @"dawdawd"];
     NSDictionary *dict = @{@"kei1": @"value1", @"key2":@"value2"};
     
-    [MyLogger TTYLogError:[NSString stringWithFormat:@"i am is %@", @"xiaoming"]];
-    [MyLogger TTYLogInfo:[NSString stringWithFormat:@"i am is %@", @"xiaoming"]];
-    [MyLogger TTYLogWarn:[NSString stringWithFormat:@"i am is %@", @"xiaoming"]];
-    [MyLogger TTYLogVerbose:[NSString stringWithFormat:@"i am is %@", @"xiaoming"]];
+//    [MyLogger TTYLogError:[NSString stringWithFormat:@"i am  %@", @"xiaoming"]];
+    [MyLogger TTYLogError:@"Log日志级别为 : Error"];
+    [MyLogger TTYLogInfo:@"Log日志级别为 : Info"];
+    [MyLogger TTYLogWarn:@"Log日志级别为 : Warn"];
+    [MyLogger TTYLogVerbose:@"Log日志级别为 : Verbose"];
+    [MyLogger TTYLogCustom:@"Log日志级别为 : Custom"];
     
 //XZH -- 宏控制条件编译
 #if (DEBUG == 1)

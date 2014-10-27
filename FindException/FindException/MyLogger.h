@@ -10,5 +10,6 @@
 + (void)TTYLogWarn:(NSString *)info;
 + (void)TTYLogInfo:(NSString *)info;
 + (void)TTYLogVerbose:(NSString *)info;
++ (void)TTYLogCustom:(NSString *)info;
 
 @end
