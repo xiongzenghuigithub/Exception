@@ -29,13 +29,13 @@
     
     int x = 4;
     NSString *xxx = @"dawdawdaw";
-//    [m test];
-    if ([m respondsToSelector:@selector(test)]) {
-        [m test];
-    }else {
-        [MyLogger TTYLogError:@"Manager类, 未实现test方法"];
-    }
-    
+    [m test];
+//    if ([m respondsToSelector:@selector(test)]) {
+//        [m test];
+//    }else {
+//        [MyLogger TTYLogError:@"Manager类, 未实现test方法"];
+//    }
+
     
     view = [[UIView alloc] init];
     view.frame = CGRectMake(10, 10, 200, 100);
