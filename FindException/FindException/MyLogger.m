@@ -24,6 +24,7 @@ static const int ddLogLevel = LOG_LEVEL_OFF; //发布版本时, 直接关闭所�
 
 + (void)TTYLogError:(NSString *)info {
     DDLogError(info);
+
 }
 
 + (void)TTYLogInfo:(NSString *)info {
